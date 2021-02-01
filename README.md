@@ -1,2 +1,40 @@
-# filepp-net
-filepp lotus网络
+
+# filepp-net pp
+ filepp-net是有别于lotus主网的独立网络，支持2K、256M、32G、64G扇区，免费提供给社区使用。
+ 
+## 加入filepp-net
+加入filepp-net，需要使用filepp社区提供的修改过后的lotus节点，miner和worker继续使用官方代码。
+
+下载修改过的lotus并编译
+```
+git clone https://github.com/blockchain-lib/lotus
+cd lotus 
+git checkout net/private-1.4.1
+make 
+```
+
+下载private.car文件，启动节点
+```
+lotus daemon --genesis=private.car  --bootstrap=false
+```
+
+连接创世节点，使用上面` lotus net listen`，命令返回的地址。如果有公网ip，换成公网ip。
+```
+lotus net connect /ip4/192.168.6.55/tcp/55555/p2p/12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB
+```
+查看连接情况
+```
+$ lotus net peers
+
+12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB, [/ip4/192.168.6.55/tcp/55555]
+
+```
+
+新建钱包地址
+```
+$ lotus wallet new bls
+
+f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
+```
+
+从水龙头获取测试币
