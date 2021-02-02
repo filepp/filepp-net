@@ -1,6 +1,9 @@
 
 # filepp-net pp
- filepp-net是有别于lotus主网的独立网络，支持2K、256M、32G、64G扇区，免费提供给社区使用。
+ filepp-net是由filepp社区维护的独立网络，免费提供给社区使用。主要修改了以下功能：
+ - 支持2K、8M、256M、32G、64G扇区
+ - WaitSeed时间为10 Epoch
+ - 最小爆块算力为2K
  
 ## 加入filepp-net
 加入filepp-net，需要使用filepp社区提供的修改过后的lotus节点，miner和worker继续使用官方代码。
