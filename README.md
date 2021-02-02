@@ -38,7 +38,7 @@ $ lotus wallet new bls
 f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
 ```
 
-从水龙头获取测试币
+从水龙头获取测试币，每天可以领取一次，每次100个Fil
 ```
 curl http://122.9.61.5:6161/api/v1/send?address=f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
 ```
