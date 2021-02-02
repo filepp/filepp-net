@@ -14,10 +14,10 @@ git checkout net/private-v1.4.1
 RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 make debug 
 ```
 
-下载[private.car](http://122.9.61.5:6161/files/private.car)文件，然后启动节点
+下载[filepp.car](http://122.9.61.5:6161/files/filepp.car)文件，然后启动节点
 ```bash
-wget http://122.9.61.5:6161/files/private.car
-lotus daemon --genesis=private.car  --bootstrap=false
+wget http://122.9.61.5:6161/files/filepp.car
+lotus daemon --genesis=filepp.car  --bootstrap=false
 ```
 
 连接创世节点，使用上面` lotus net listen`，命令返回的地址。如果有公网ip，换成公网ip。（注意每次重启lotus都要执行这条命令，数据才会同步）
@@ -27,15 +27,12 @@ lotus net connect /ip4/113.142.4.70/tcp/53171/p2p/12D3KooWSr6MuGscVkqvrdXjsVDwB7
 查看连接情况
 ```bash
 $ lotus net peers
-
-12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB, [/ip4/192.168.6.55/tcp/55555]
-
+12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB, [/ip4/113.142.4.70/tcp/53171]
 ```
 
 新建钱包地址
 ```bash
 $ lotus wallet new bls
-
 f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
 ```
 
