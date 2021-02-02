@@ -36,7 +36,7 @@ $ lotus wallet new bls
 f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
 ```
 
-从水龙头获取测试币。每天可以领取一次，每次100Fil。请下面这条命令的钱包地址替换成你的地址
+从水龙头获取测试币。每天可以领取一次，每次100Fil。请将下面这条命令的钱包地址替换成你的地址
 ```bash
 curl http://122.9.61.5:6161/api/v1/send?address=f3slo5iisbjgnndg5gygkpqpfv3xotjjqir4scs7bep5gaxfpgahj4y2bjlk7mjsrm6iomyr3rwfm4onzfkbia
 ```
