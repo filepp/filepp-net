@@ -17,7 +17,7 @@ RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 make debug
 下载[filepp.car](http://122.9.61.5:6161/files/filepp.car)文件，然后启动节点
 ```bash
 wget http://122.9.61.5:6161/files/filepp.car
-lotus daemon --genesis=filepp.car  --bootstrap=false
+lotus daemon --genesis=filepp.car --bootstrap=false
 ```
 
 连接种子节点（注意每次重启lotus都要执行这条命令数据才会同步）
