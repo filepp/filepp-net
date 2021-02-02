@@ -20,7 +20,7 @@ wget http://122.9.61.5:6161/files/filepp.car
 lotus daemon --genesis=filepp.car  --bootstrap=false
 ```
 
-连接节点（注意每次重启lotus都要执行这条命令数据才会同步）
+连接种子节点（注意每次重启lotus都要执行这条命令数据才会同步）
 ```bash
 lotus net connect /ip4/113.142.4.70/tcp/53171/p2p/12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB
 ```
