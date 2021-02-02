@@ -7,10 +7,10 @@
 
 下载修改过的lotus并编译
 ```
-git clone https://github.com/blockchain-lib/lotus
+git clone https://github.com/filepp/lotus
 cd lotus 
-git checkout net/private-1.4.1
-make 
+git checkout net/private-v1.4.1
+RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 make debug 
 ```
 
 下载private.car文件，启动节点
@@ -18,7 +18,7 @@ make
 lotus daemon --genesis=private.car  --bootstrap=false
 ```
 
-连接创世节点，使用上面` lotus net listen`，命令返回的地址。如果有公网ip，换成公网ip。
+连接创世节点，使用上面` lotus net listen`，命令返回的地址。如果有公网ip，换成公网ip。（注意每次重启lotus都要执行这条命令，数据才会同步）
 ```
 lotus net connect /ip4/192.168.6.55/tcp/55555/p2p/12D3KooWSr6MuGscVkqvrdXjsVDwB7whQbFj94SmzJs6MStdhYsB
 ```
