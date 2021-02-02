@@ -6,9 +6,7 @@
  - 最小爆块算力为2K
  
 ## 加入filepp-net
-加入filepp-net，需要使用filepp社区提供的修改过后的lotus节点，miner和worker继续使用官方代码。
-
-下载修改过的lotus并编译
+加入filepp-net，需要使用filepp社区提供的修改过后的lotus代码进行编译。
 ```
 git clone https://github.com/filepp/lotus
 cd lotus 
