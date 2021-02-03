@@ -15,6 +15,11 @@ RUSTFLAGS="-C target-cpu=native -g" FFI_BUILD_FROM_SOURCE=1 make debug
 sudo make install
 ```
 
+导入加速CDN
+```
+export IPFS_GATEWAY="https://proof-parameters.s3.cn-south-1.jdcloud-oss.com/ipfs/"
+```
+
 启动节点
 ```bash
 lotus daemon
@@ -25,6 +30,18 @@ lotus daemon
 $ lotus wallet new bls
 f3rzwb56yq2lujzoaax4jyajfzxnxesf2dstjqsq2keiwhwt7zfi5kgtqlx5fwdqmaxoybnj7xctva2fsr2uha
 ```
+
+创建miner 
+```bash
+$ lotus-miner init --owner 钱包地址  --sector-size=2KiB (默认2K, 支持 8MiB、512MiB、32GiB、64GiB) 
+```
+
+启动miner
+
+```
+louts-miner run
+```
+
 
 从水龙头获取测试币。每个IP每天可以领取一次,100Fil。请将下面这条命令的钱包地址替换成你的地址
 ```bash
