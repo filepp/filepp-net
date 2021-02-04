@@ -54,5 +54,8 @@ $ lotus-miner init --owner 钱包地址  --sector-size=2KiB (默认2K, 支持 8M
 louts-miner run
 ```
 
+### 区块链浏览器
+
+http://122.9.61.5:4396/#/
 
 
